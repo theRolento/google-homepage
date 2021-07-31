@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Google</title>
+        <style>
+            body {
+                min-width: 400px;
+                font-size: 14px;
+                font-family: arial,sans-serif;
+                color: #222;
+                background: #fff;
+            }
+            .main-totale {
+                display: flex;
+                flex-direction: column;
+                height: 100%;
+            }
+            .parte-alta {
+                display: flex;
+                align-items: center;
+                padding: 6px;
+                height: 60px;
+                flex-shrink: 0;
+                box-sizing: border-box;
+            }
+            a.alto-testo:first-of-type {
+                margin-left: 15px;
+            }
+            a.alto-testo {
+                display: inline-block;
+                padding: 15px;
+                margin: 0 5px;
+                color: #222;
+            }
+            a {
+                text-decoration: none;
+            }
+            .logo-header {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                min-height: 92px;
+                max-height: 290px;
+                height: calc(100% - 560px);
+                flex-shrink: 0;
+                box-sizing: border-box;
+                margin-top: 185px;
+            }
+
+            .logo-main {
+                max-height: 92px;
+                position: relative;
+                height: 100%;
+                margin-top: auto;
+            }
+
+            .logo-img {
+                max-height: 100%;
+                max-width: 100%;
+                object-fit: contain;
+                object-position: center bottom;
+                width: auto;
+            }
+
+            .barra-main {
+                padding: 20px;
+                max-height: 160px;
+                flex-shrink: 0;
+                box-sizing: border-box;
+            }
+
+            .barra-dentro {
+                width: auto;
+                max-width: 584px;
+                position: relative;
+                margin: 0 auto;
+                padding-top: 6px;
+            }
+
+            .ricerca-barra {
+                width: auto;
+                max-width: 584px;
+                background: #fff;
+                display: flex;
+                border: 1px solid #dfe1e5;
+                box-shadow: none;
+                border-radius: 24px;
+                z-index: 3;
+                height: 44px;
+                margin: 0 auto;
+            }
+
+            .lente-query {
+                flex: 1;
+                display: flex;
+                padding: 5px 8px 0 16px;
+                padding-left: 14px;
+            }
+
+            .img-lente {
+                display: flex;
+                align-items: center;
+                padding-right: 13px;
+                margin-top: -5px;
+            }
+
+            .lente-1 {
+                margin: auto;
+            }
+            .lentina {
+                margin-top: 3px;
+                color: #9aa0a6;
+                height: 20px;
+                width: 20px;
+                display: inline-block;
+                fill: currentColor;
+                line-height: 24px;
+                position: relative;
+            }
+            svg {
+                display: block;
+                height: 100%;
+                width: 100%;
+            }
+            .stringa-query {
+                display: flex;
+                flex: 1;
+                flex-wrap: wrap;
+            }
+            .query-sfondo {
+                color: transparent;
+                flex: 100%;
+                white-space: pre;
+                height: 34px;
+            }
+            .query-testo {
+                background-color: transparent;
+                border: none;
+                margin: 0;
+                padding: 0;
+                color: rgba(0, 0, 0, .87);
+                word-wrap: break-word;
+                outline: none;
+                display: flex;
+                flex: 100%;
+                margin-top: -37px;
+                height: 34px;
+                font-size: 16px;
+            }
+            .vuoto1 {
+                display: flex;
+                flex: 0 0 auto;
+                margin-top: -5px;
+                align-items: stretch;
+                flex-direction: row;
+            }
+            .due-pulsanti-spazio {
+                height: 70px;
+                padding-top: 18px;
+                top: 53px;
+                z-index: 0;
+            }
+            input[type="submit"] {
+                background-color: #f8f9fa;
+                border: 1px solid #f8f9fa;
+                border-radius: 4px;
+                color: #3c4043;
+                font-family: arial,sans-serif;
+                font-size: 14px;
+                margin: 11px 4px;
+                padding: 0 16px;
+                line-height: 27px;
+                height: 36px;
+                min-width: 54px;
+                text-align: center;
+                cursor: pointer;
+                user-select: none;
+            }
+            .zona-bassa {
+                flex-grow: 1;
+                flex-shrink: 0;
+                box-sizing: border-box;
+            }
+            #gws-output {
+                font-size: small;
+                margin-bottom: 24px;
+            }
+            .erede-esterno {
+                text-align: center;
+            }
+            #erede {
+                color: #3c4043;
+                display: inline-block;
+                line-height: 28px;
+            }
+            #erede a {
+                padding: 0 3px;
+                color: #1a0dab;
+                text-decoration: none;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="main-totale">
+            <div class="parte-alta">
+                <a class="alto-testo" href="https://about.google/?fg=1&amp;utm_source=google-IT&amp;utm_medium=referral&amp;utm_campaign=hp-header" rel="noreferrer noopener">Chi siamo</a>
+                <a class="alto-testo" href="https://store.google.com/IT?utm_source=hp_header&amp;utm_medium=google_ooo&amp;utm_campaign=GS100042&amp;hl=it-IT" rel="noreferrer noopener">Google Store</a>
+            </div>
+        <div class="logo-header">
+            <div class="logo-main">
+                <img class="logo-img" alt="Google" src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png">
+            </div>
+        </div>
+        <div class="barra-main">
+            <form>
+                <div>
+                    <div class="barra-dentro">
+                        <div class="ricerca-barra">
+                            <div class="lente-query">
+                                <div class="img-lente">
+                                    <div class="lente-1">
+                                        <span class="lentina">
+                                            <svg focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                                <path d="M15.5 14h-.79l-.28-.27A6.471 6.471 0 0 0 16 9.5 6.5 6.5 0 1 0 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"></path>
+                                            </svg>
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="stringa-query">
+                                    <div class="query-sfondo"></div>
+                                    <input class="query-testo" maxlength="2048" name="q" type="text" aria-autocomplete="both" aria-haspopup="false" autocapitalize="none" autocomplete="off" autocorrect="off" autofocus="" role="combobox" spellcheck="false" title="Cerca" value="" aria-label="Cerca">
+                                </div>
+                                <div class="vuoto1"></div>
+                            </div>
+                        </div>
+                        <div class="due-pulsanti-spazio">
+                            <center>
+                                <input class="pulsante-uno" value="Cerca con Google" aria-label="Cerca con Google" name="btnK" type="submit">
+                                <input class="pulsante-due" value="Mi sento fortunato" aria-label="Mi sento fortunato" name="btnI" type="submit">
+                            </center>
+                        </div>
+                    </div>
+                    <div style="background:url(/images/searchbox/desktop_searchbox_sprites318_hr.webp)"> </div>
+                </div>
+            </form>
+        </div>
+        <div class="zona-bassa">
+            <div id="gws-output" class="erede-esterno">
+                <div id="erede">
+                    Google offerto in:
+                    <a href="https://www.google.com/setprefs?sig=0_78agNYhuBLffjpTImKMZOKHdHEM%3D&amp;hl=en&amp;source=homepage&amp;sa=X&amp;ved=0ahUKEwjcmteeho7yAhUQ_RQKHRT2Dg4Q2ZgBCA8">English</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    </body>
+</html>
